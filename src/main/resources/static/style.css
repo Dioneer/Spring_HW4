@@ -1,0 +1,45 @@
+body{
+    width: 100%;
+    min-height:100%;
+    display: flex;
+    flex-direction:column;
+}
+form{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    font-size: 42px;
+    font-weight: 600;
+    color: #fdfdfe;
+    text-shadow: 0px 0px 5px #b393d3, 0px 0px 10px #b393d3, 0px 0px 10px #b393d3, 0px 0px 20px #b393d3;
+    text-align: center;
+}
+label{
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+}
+input{
+    display:flex;
+    padding:10px;
+    margin: 20px 0;
+    background: pink;
+    white-space: nowrap;
+    transform: translate(0, 0);
+    transform-origin: 0 0;
+    transition: transform 120ms ease-in;
+    font-weight: bold;
+    line-height: 1.2;
+}
+button{
+    display:block;
+    padding:10px;
+    background: green;
+    margin: 22px 0 0 0;
+}
+div{
+    margin: 0 auto;
+}

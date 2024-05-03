@@ -38,7 +38,8 @@ public class UserController {
                 }).orElseThrow(()-> new ResponseStatusException(HttpStatus.NOT_FOUND));
     }
     @GetMapping("/create")
-    public String createForm(Model model){
+    public String createForm(Model model, @ModelAttribute("user") UserCreateUpdateDto user){
+        model.addAttribute("user", user);
         model.addAttribute("roles", Role.values());
         model.addAttribute("companies", companyService.findAll());
         return "user/create";

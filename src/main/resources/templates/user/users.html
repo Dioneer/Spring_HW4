@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
+    <link rel="stylesheet" href="/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Users</title>
 </head>
 <body>
-<p>Form for filter</p>
+<h1>Form for filter</h1>
 <form th:action="@{/users}">
     <label for="firstname">Firstname:
         <input id="firstname" type="text" name="firstName">
