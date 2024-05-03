@@ -59,7 +59,9 @@ values ('1990-01-10', 'Ivan', 'Ivanov', 'ADMIN', 'ivanov@gmail.com', (select id 
     <last-used-providers />
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
-    <open-files />
+    <open-files>
+      <object connection-id="4fc8029d-b16f-404b-921a-f8756d0365a8" object-ref="schemas/public/tables/users" />
+    </open-files>
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
     <connection id="4fc8029d-b16f-404b-921a-f8756d0365a8" />

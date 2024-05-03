@@ -6,8 +6,8 @@
     <title>User</title>
 </head>
 <body>
-<p>Form for delete anf update</p>
-<form th:action="@{/users/{userId}/update(userId=${user.id})}" method="post" th:object="${user}">
+<p>Form for create</p>
+<form th:action="@{/users}" method="post">
     <label for="username">Username:
         <input id="username" type="text" name="username" th:value="*{username}">
     </label><br>
@@ -29,15 +29,11 @@
             <select id="company" name="company_id">
                 <option th:each="company : ${companies}"
                         th:value="${company.getId()}"
-                        th:selected="${company.getId() == user.companyReadDto.getId()}"
                         th:text="${company.getCompanyName()}">Company</option>
             </select>
         </label>
     </div>
-    <button type="submit">Update</button>
-</form>
-<form th:action="@{/users/{userId}/delete(userId=${user.id})}" method="post" th:object="${user}">
-    <button type="submit">Remove</button>
+    <button type="submit">Create</button>
 </form>
 </body>
 </html>

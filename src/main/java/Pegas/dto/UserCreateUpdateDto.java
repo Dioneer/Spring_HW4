@@ -1,9 +1,8 @@
 package Pegas.dto;
 
-import Pegas.entity.Company;
 import Pegas.entity.Role;
-import jakarta.persistence.*;
 import lombok.Value;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import java.time.LocalDate;
 
@@ -12,6 +11,7 @@ public class UserCreateUpdateDto{
     String username;
     String firstname;
     String lastname;
+    @DateTimeFormat(pattern = "dd-MM-yyyy")
     LocalDate birthday;
     Role role;
     Integer company_id;

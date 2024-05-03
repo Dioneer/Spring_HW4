@@ -1,6 +1,8 @@
 logging:
   level:
     root: WARN
+    Pegas.controller.GreetingController: ERROR
+    Pegas.controller.UserController: ERROR
   file:
     name: log.txt
     path: /
