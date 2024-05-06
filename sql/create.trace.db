@@ -1,3 +1,0 @@
-2024-05-06 13:48:44.301587+03:00 jdbc[3]: exception
-org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANY" not found (this database is empty); SQL statement:
-insert into company (name_company) values('Google'),('Meta'),('Amazon') [42104-224]
