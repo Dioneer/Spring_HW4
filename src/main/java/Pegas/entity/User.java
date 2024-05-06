@@ -10,7 +10,7 @@ import java.time.LocalDate;
 @Data
 @Builder
 @Entity
-@ToString(exclude = {"company"})
+//@ToString(exclude = {"company"})
 @Table(name="users")
 public class User implements BaseEntity<Long>{
     @Id
